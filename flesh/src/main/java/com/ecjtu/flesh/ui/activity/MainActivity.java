@@ -1,14 +1,14 @@
-package com.ecjtu.flesh.ui.activity;
+﻿package com.ecjtu.flesh.ui.activity;
 
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -118,10 +118,10 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     protected void transparent() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);  //去除半透明状态栏
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);  //鍘婚櫎鍗婇€忔槑鐘舵€佹爮
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN); //一般配合fitsSystemWindows()使用, 或者在根部局加上属性android:fitsSystemWindows="true", 使根部局全屏显示
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN); //涓€鑸厤鍚坒itsSystemWindows()浣跨敤, 鎴栬€呭湪鏍归儴灞€鍔犱笂灞炴€ndroid:fitsSystemWindows="true", 浣挎牴閮ㄥ眬鍏ㄥ睆鏄剧ず
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
@@ -132,9 +132,10 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 Class decorViewClazz = Class.forName("com.android.internal.policy.DecorView");
                 Field field = decorViewClazz.getDeclaredField("mSemiTransparentStatusBarColor");
                 field.setAccessible(true);
-                field.setInt(getWindow().getDecorView(), Color.TRANSPARENT); //改为透明
+                field.setInt(getWindow().getDecorView(), Color.TRANSPARENT); //鏀逛负閫忔槑
             } catch (Exception e) {
             }
         }
     }
 }
+

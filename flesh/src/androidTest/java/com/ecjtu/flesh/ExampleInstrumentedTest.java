@@ -1,10 +1,10 @@
-package com.ecjtu.flesh;
+﻿package com.ecjtu.flesh;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.util.Log;
 
 import com.ecjtu.flesh.cache.impl.PageListCacheHelper;
@@ -274,7 +274,7 @@ public class ExampleInstrumentedTest {
 
         File[] list = new File(appContext.getFilesDir().getAbsolutePath()).listFiles();
         for (File child : list) {
-//            if (child.getName().endsWith("性感妹子")) {
+//            if (child.getName().endsWith("鎬ф劅濡瑰瓙")) {
 //                child.delete();
 //                break;
 //            }
@@ -448,3 +448,4 @@ public class ExampleInstrumentedTest {
     }
 
 }
+

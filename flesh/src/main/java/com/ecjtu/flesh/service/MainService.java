@@ -1,4 +1,4 @@
-package com.ecjtu.flesh.service;
+﻿package com.ecjtu.flesh.service;
 
 import android.app.Service;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -217,3 +217,4 @@ public class MainService extends Service {
     }
 
 }
+

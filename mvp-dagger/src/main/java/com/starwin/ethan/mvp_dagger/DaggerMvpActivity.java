@@ -1,8 +1,8 @@
-package com.starwin.ethan.mvp_dagger;
+﻿package com.starwin.ethan.mvp_dagger;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.starwin.ethan.mvp_dagger.dagger.BaseComponent;
 
@@ -28,3 +28,4 @@ public abstract class DaggerMvpActivity<T extends BaseComponent<Y>, Y> extends A
     protected abstract Y getComponentInject();
 
 }
+

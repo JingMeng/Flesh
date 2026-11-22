@@ -1,9 +1,9 @@
-package com.ecjtu.flesh.ui.activity;
+﻿package com.ecjtu.flesh.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ecjtu.componentes.activity.RotateNoCreateActivity;
 import com.ecjtu.componentes.fragment.VideoFragment;
@@ -24,3 +24,4 @@ public class TestActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_test);
     }
 }
+

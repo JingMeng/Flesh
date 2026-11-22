@@ -1,8 +1,8 @@
-package com.ecjtu.netcore;
+﻿package com.ecjtu.netcore;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.ecjtu.netcore.network.AsyncNetwork;
 import com.ecjtu.netcore.network.IRequestCallback;
@@ -30,3 +30,4 @@ public class ExampleInstrumentedTest {
 //        assertEquals("com.ecjtu.netcore.test", appContext.getPackageName());
     }
 }
+
